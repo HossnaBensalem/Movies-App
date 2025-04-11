@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #032541;
+    --secondary-color: #21d07a;
+    --white: #fff;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --card-bg: #fff;
+    --card-border: #e3e3e3;
+    --header-color: #032541;
+    --input-bg: #fff;
+    --input-text: #333;
+    --button-bg: #21d07a;
+    --button-text: #fff;
+  }
+  
+  .dark-mode {
+    --primary-color: #1a1a2e;
+    --secondary-color: #4ecca3;
+    --white: #2d3748;
+    --background-color: #121212;
+    --text-color: #e4e4e4;
+    --card-bg: #1e1e24;
+    --card-border: #2d2d3a;
+    --header-color: #1a1a2e;
+    --input-bg: #2d3748;
+    --input-text: #e4e4e4;
+    --button-bg: #4ecca3;
+    --button-text: #121212;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .header {
+    background-color: var(--header-color);
+  }
+  
+  .movie-card {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+    color: var(--text-color);
+  }
+  
+  .result-card {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+    color: var(--text-color);
+  }
+  
+  input, select, textarea {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border-color: var(--card-border);
+  }
+  
+  button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+  }
+  
+  /* زر تبديل الوضع المظلم */
+  .toggle-darkmode {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--card-border);
+    border-radius: 5px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+  
+  .toggle-darkmode:hover {
+    background-color: var(--card-border);
+  }
+  
+  .toggle-darkmode svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }

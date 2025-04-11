@@ -8,7 +8,7 @@
     align-items: center;
 }
 .header a {
-    color:var(--white);
+    color:#21d07a;
     font-size: 1.25rem;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -23,6 +23,9 @@
 .header .nav-links {
 display: flex;
 align-items: center;
+}
+.btn{
+    background-color: rgb(21, 35, 6);
 }
 
 .header .nav-links li {

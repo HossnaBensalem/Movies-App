@@ -41,6 +41,12 @@ export const reducer = (state, action) => {
           (movie) => movie.imdbID !== action.payload
         ),
       };
+    
+    case actions.TOGGLE_DARK_MODE:
+      return {
+        ...state,
+        darkMode: !state.darkMode,
+      };
 
     default:
       return state;

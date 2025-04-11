@@ -2,6 +2,7 @@
     display: flex;
     margin-bottom: 20px;
 }
+
 .result-card .poster-wrapper img,
 .filler-poster {
     width: 75px;
@@ -12,11 +13,13 @@
     display: block;
     color: transparent;
 }
+
 .result-card .info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .result-card .info .title {
     font-size: 1.25rem;
     font-weight: 600;
@@ -30,6 +33,20 @@
     color: var(--primary);
     margin: 0;
 }
+
 .result-card .controls button {
     margin-right: 10px;
+    transition: opacity 0.3s, cursor 0.3s;  
+}
+
+
+.result-card .controls button:disabled {
+    opacity: 0.5;  
+    cursor: not-allowed; 
+}
+
+
+.result-card .controls button:not(:disabled) {
+    opacity: 1;  
+    cursor: pointer; 
 }

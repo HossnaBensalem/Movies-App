@@ -5,6 +5,7 @@ import Add from "./components/Add";
 import Watchlist from "./components/Watchlist";
 import Watched from "./components/Watched";
 import ContextProvider from './components/context/GlobalContext';
+import './components/DarkMode.css'; // Import the dark mode CSS
 
 
 const App = () => {
